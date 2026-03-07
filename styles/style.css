@@ -1,5 +1,105 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  font-family: var(--main-font-family);
+  position: relative; /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  background-color: var(--bg-color, #061148);
+  background-image: var(--bg-image, url(../images/cover-image-dark.png));
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  inline-size: 375px;
+}
+.page::before,
+.page::after {
+  content: "";
+  position: absolute;
+  inline-size: 25px;
+  block-size: 25px;
+}
+.page::before {
+  top: 10px;
+  right: 5px;
+  border-block-start: 1px solid var(--accent-color, #ff0070);
+  border-inline-end: 1px solid var(--accent-color, #ff0070);
+}
+.page::after {
+  bottom: 10px;
+  left: 15px;
+  border-inline-start: 1px solid var(--accent-color, #ff0070);
+  border-block-end: 1px solid var(--accent-color, #ff0070);
+}
+.header__decor {
+  position: absolute;
+  color: var(--accent-color);
+  top: 13px;
+  right: 33px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+.header__decor::after {
+  content: "";
+  position: absolute;
+  inline-size: 9px;
+  block-size: 9px;
+  border-radius: 100%;
+  left: 43px;
+  top: 5px;
+  background-color: var(--accent-color, #ff0070);
+  box-shadow: 0px 0px 4px 2px var(--accent-color, #ff0070);
+}
+.header {
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+  block-size: 668px;
+  min-block-size: 668px;
+  padding: 75px 10px 66px;
+}
+.header__theme-menu {
+  justify-self: end;
+}
+.header__theme-menu-button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-color);
+  background-color: transparent;
+  text-transform: lowercase;
+  border-inline: none;
+  border-block: none;
+  inline-size: 70px;
+  block-size: 26px;
+  font-size: 18px;
+  line-height: 18px;
+}
+.header__theme-menu-button_active {
+  border-inline: 1px solid var(--accent-color, #ff0070);
+  border-block: 1px solid var(--accent-color, #ff0070);
+}
+.header__theme-menu-item:not(:last-child) {
+  margin-block-end: 10px;
+}
+.page__title {
+  align-self: center;
+  color: var(--heading-color, #db00ff);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-weight: 700;
+  line-height: 83%;
+}
+.shadow-decor {
+  text-shadow: 4px 4px 0 var(--accent-color, #ff0070);
+}
+.header__title {
+  font-size: 18px;
+  line-height: 23.4px;
+  align-self: end;
+}
+.title-decor {
+  background-color: var(--accent-color, #ff0070);
+  color: var(--text-on-accent-color);
+  font-weight: 700;
 }
