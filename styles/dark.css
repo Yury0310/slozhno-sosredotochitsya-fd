@@ -1,5 +1,5 @@
 :root {
-  --bg-color: var(--dark-blue, #061148);
+  --bg-color: var(--dark-blue);
   --bg-image: url(../images/cover-image-dark.png);
 } /*
   Специально для тёмной темы при наличии класса,
