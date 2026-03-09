@@ -6,11 +6,23 @@
   --main-font-family: IBM Plex mono;
   --main-text-size: 18px;
   --main-line-height: 23.4px;
-
+  --section-margin-start: 50px;
+  --decor-offset: 10px;
+  --article-title-margin-start: 20px;
+  --article-description-margin-start: 10px;
+--section-gallery-gap: 10px;
   --main-text-color: #f1b2ce;
   --heading-color: #db00ff;
   --dark-blue: #061148;
   --accent-color: #ff0070;
   --text-on-accent-color: #001133;
   --hover-accent-color: rgba(255, 0, 112, 0.4);
+}
+@media(width>=768px){
+  :root{
+  --section-margin-start: 80px;
+  --decor-offset: 20px;
+  --section-gallery-gap: 20px;
+
+  }
 }
