@@ -23,6 +23,22 @@
     --text-on-accent-color: #353430;
     --hover-nav-color: rgba(50, 49, 45, 0.4);
   }
+  .header__decor {
+    visibility: hidden;
+  }
+  .decorated-zone::before {
+    border-block-start: 1px solid var(--main-text-color, #353430);
+    border-inline-end: 1px solid var(--main-text-color, #353430)
+  }
+  .decorated-zone::after {
+   border-inline-start: 1px solid var(--main-text-color, #353430);
+    border-block-end: 1px solid var(--main-text-color, #353430);
+  }
+  @media (width>=1024px) {
+ .footer {
+    --accent-color: #ff0070;
+  }
+}
 }
 .theme-light .decorated-zone::before {
   border-block-start: 1px solid var(--main-text-color, #353430);
