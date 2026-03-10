@@ -33,7 +33,7 @@
   border-block-end: 1px solid var(--main-text-color, #353430);
 }
 .theme-light .header__decor {
-  display: none;
+  visibility: hidden;
 }
 @media (width>=1024px) {
  .theme-light .footer {
