@@ -117,6 +117,7 @@
   color: var(--text-on-accent-color);
   font-weight: 700;
   font-size: inherit;
+  line-height: inherit;
 }
 .section {
   display: grid;
