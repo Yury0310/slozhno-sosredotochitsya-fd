@@ -1,6 +1,6 @@
 :root.theme-light {
   --main-bg-image: url(../images/cover-image-light.png);
-  --spare-bg-color: #f1b2ce;
+  /* --spare-bg-color: #FF8DCB; */
   --main-text-color: #353430;
   --heading-color: #FFC2E6;
   --accent-color: #FF8DCB;

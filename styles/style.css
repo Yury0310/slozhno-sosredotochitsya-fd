@@ -4,7 +4,7 @@
   line-height: var(--main-line-height, 23.4px);
   color: var(--main-text-color, #f1b2ce);
   background-color: var(--spare-bg-color, #061148 );
-  background-image: var(--main-bg-image, url(../images/cover-image-light.png));
+  background-image: var(--main-bg-image, url(../images/cover-image-dark.png));
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
