@@ -1,15 +1,11 @@
-:root {
-  --bg-color: var(--dark-blue);
-  --bg-image: url(../images/cover-image-dark.png);
-} /*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 :root.theme-dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --main-bg-image: url(../images/cover-image-dark.png);
+  --nav-color: #ff0070;
+  --decorated-zone-color: #ff0070;
+  --main-bg-color:  #061148;
+  --main-text-color: #f1b2ce;
+  --heading-color: #db00ff;
+  --accent-color: #ff0070;
+  --text-on-accent-color: #001133;
+  --hover-nav-color: rgba(255, 0, 112, 0.4);
 }
