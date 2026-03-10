@@ -5,6 +5,7 @@
   --heading-color: #FFC2E6;
   --accent-color: #FF8DCB;
   --nav-color: #353430;
+  --section__title-color:#353430;
   --decorated-zone-color: #353430;
   --text-on-accent-color: #353430;
   --hover-nav-color: rgba(50, 49, 45, 0.4);
@@ -17,10 +18,11 @@
     --heading-color: #FFC2E6;
     --accent-color: #FF8DCB;
     --nav-color: #353430;
+    --section__title-color:#353430;
     --decorated-zone-color: #353430;
     --text-on-accent-color: #353430;
     --hover-nav-color: rgba(50, 49, 45, 0.4);
-  } 
+  }
 }
 .theme-light .decorated-zone::before {
   border-block-start: 1px solid var(--main-text-color, #353430);
