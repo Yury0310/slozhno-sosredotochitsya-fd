@@ -1,5 +1,5 @@
 :root.theme-dark {
-  --background-color:#01062a;
+  --background-color: #000028;
   --main-bg-image: url(../images/cover-image-dark.png);
   --nav-color: #ff0070;
   --decorated-zone-color: #ff0070;
@@ -7,6 +7,6 @@
   --main-text-color: #f1b2ce;
   --heading-color: #db00ff;
   --accent-color: #ff0070;
-  --text-on-accent-color: #001133;
+  --text-on-accent-color: #000028;
   --hover-nav-color: rgba(255, 0, 112, 0.4);
 }

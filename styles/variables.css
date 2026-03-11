@@ -8,14 +8,14 @@
   --article-description-margin-start: 10px;
   --section-gallery-gap: 10px;
   --main-bg-image: url(../images/cover-image-dark.png);
-  --background-color:#01062a;
+  --background-color: #000028;
   --section-title-color: #ff0070;
   --nav-color: #ff0070;
   --decorated-zone-color: #ff0070;
   --main-text-color: #f1b2ce;
   --heading-color: #db00ff;
   --accent-color: #ff0070;
-  --text-on-accent-color: #001133;
+  --text-on-accent-color: #000028;
   --hover-nav-color: rgba(255, 0, 112, 0.4);
 }
 @media (width>=768px) {
