@@ -1,58 +1,42 @@
 :root.theme-light {
+  --background-color:#fceff6;
   --main-bg-image: url(../images/cover-image-light.png);
-  /* --spare-bg-color: #FF8DCB; */
   --main-text-color: #353430;
-  --heading-color: #FFC2E6;
-  --accent-color: #FF8DCB;
+  --heading-color: #ffc2e6;
+  --accent-color: #ff8dcb;
   --nav-color: #353430;
-  --section__title-color:#353430;
+  --section-title-color: #353430;
   --decorated-zone-color: #353430;
   --text-on-accent-color: #353430;
   --hover-nav-color: rgba(50, 49, 45, 0.4);
 }
+.theme-light .header__decor {
+    visibility: hidden;
+  }
+@media (width>=1024px) {
+  .theme-light .footer {
+    --accent-color: #ff0070;
+  }
+}
 @media (prefers-color-scheme: light) {
   :root {
+  --background-color:#fceff6;
     --main-bg-image: url(../images/cover-image-light.png);
-    --spare-bg-color: #f1b2ce;
     --main-text-color: #353430;
-    --heading-color: #FFC2E6;
-    --accent-color: #FF8DCB;
+    --heading-color: #ffc2e6;
+    --accent-color: #ff8dcb;
     --nav-color: #353430;
-    --section__title-color:#353430;
+    --section-title-color: #353430;
     --decorated-zone-color: #353430;
     --text-on-accent-color: #353430;
     --hover-nav-color: rgba(50, 49, 45, 0.4);
   }
-  .header__decor {
+  .theme-auto .header__decor {
     visibility: hidden;
-  }
-  .decorated-zone::before {
-    border-block-start: 1px solid var(--main-text-color, #353430);
-    border-inline-end: 1px solid var(--main-text-color, #353430)
-  }
-  .decorated-zone::after {
-   border-inline-start: 1px solid var(--main-text-color, #353430);
-    border-block-end: 1px solid var(--main-text-color, #353430);
-  }
-  @media (width>=1024px) {
- .footer {
-    --accent-color: #ff0070;
-  }
-}
-}
-.theme-light .decorated-zone::before {
-  border-block-start: 1px solid var(--main-text-color, #353430);
-  border-inline-end: 1px solid var(--main-text-color, #353430)
-}
-.theme-light .decorated-zone::after {
-  border-inline-start: 1px solid var(--main-text-color, #353430);
-  border-block-end: 1px solid var(--main-text-color, #353430);
-}
-.theme-light .header__decor {
-  visibility: hidden;
-}
-@media (width>=1024px) {
- .theme-light .footer {
-    --accent-color: #ff0070;
-  }
+  } 
+  @media (width >= 1024px) {
+    .footer {
+      --accent-color: #ff0070;
+    }
+  } 
 }
